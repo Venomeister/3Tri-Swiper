@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu_titulo">Costa e Silva - Turmas</li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO A</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO B</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO C</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO D</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO E</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO F</a></li>
+                <li class="lista-menu_item"><a href="#"> 1°ANO G</a></li>
+             </ul>
+                <a href="#"><img class="container__imagem" src="img/download.jpeg" alt="logotipo da biblioteca start"></a>
+        </div>
+        <div class="container">
+           <a href="#"><img class="container__imagem" src="img/Favoritos.svg" alt="meus Favoritos"></a>
+           <a href="#"><img class="container__imagem" src="img/Emprestimos.svg" alt="meus empréstimos"></a>
+           <a href="#"><img class="container__imagem" src="img/Usuario.svg" alt="meu perfil"></a>
+        </div>
+    </header>
+    <section class="gridimg">
+        <div class="div-todasimagens">
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/1.jpg" alt="">
+                <h1 class="titulo">cachorrinho</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/2.jpg" alt="">
+                <h1 class="titulo">filhote butijao</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/3.jpeg" alt="">
+                <h1 class="titulo">filhote linguinha</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/4.jpeg" alt="">
+                <h1 class="titulo">filhote maneiro</h1>
+            </div>
+    
+            <div class="div-imagem">
+                <img class="Imagem" src="img/5.jpg" alt="">
+                <h1 class="titulo">caozinho pidao</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/6.jpg" alt="">
+                <h1 class="titulo">caozinho meia</h1>
+            </div>
+            <span>
+            </span>
+            <span>
+            </span>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/7.jpg" alt="">
+                <h1 class="titulo">caozinho feio</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/8.jpg" alt="">
+                <h1 class="titulo">cao willy wonka</h1>
+            </div>
+            <div class="div-imagem">
+                <img class="Imagem" src="img/9.jpeg" alt="">
+                <h1 class="titulo">cao justin bieber</h1>
+            </div>
+        </div>
+
+    </section>
+    <section class="carrossel">
+        <h2 class="titulo_carrossel">Mais caozinhos</h2>
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="img2/a.png"></div>
+      <div class="swiper-slide"><img src="img2/b.png"></div>
+      <div class="swiper-slide"><img src="img2/c.png"></div>
+      <div class="swiper-slide"><img src="img2/d.png"></div>
+      <div class="swiper-slide"><img src="img2/e.png"></div>
+      <div class="swiper-slide"><img src="img2/f.png"></div>
+      <div class="swiper-slide"><img src="img2/g.png"></div>
+      <div class="swiper-slide"><img src="img2/h.png"></div>
+     
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+              spaceBetween: 10,
+              slidesPerView:3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
+</body>
+</html>
